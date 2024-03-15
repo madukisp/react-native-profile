@@ -38,7 +38,7 @@ export function BottomTabsRoutes() {
         }}
     />
     <Tab.Screen 
-        name="Contact" 
+        name="Contatos" 
         component={ContactScreen}
         options={{
             tabBarLabel: 'Contato',

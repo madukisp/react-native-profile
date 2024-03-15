@@ -3,13 +3,16 @@ import { ScrollView, Text, View } from 'react-native';
 import SkillRating from '../components/SkillRating';
 import styles from './SkillScreen.styles';
 
+
 const SkillScreen = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.header}>Minhas Habilidades</Text>
+      <View style={styles.summaryContainer}>
       <Text style={styles.summary}>
       Sou estudante do 4º semestre em Desenvolvimento Full Stack pela Universidade Estácio de Sá, com conhecimentos em Python e competências em HTML, JavaScript, Angular, React, Node.js e Java. Atualmente, estou expandindo meu conhecimento em desenvolvimento mobile através do React Native e Flutter, bem como em computação em nuvem com Azure.
       </Text>
+      </View>
       <View style={styles.skillsWrapper}>
         <SkillRating skill="Python" rating={4} />
         <SkillRating skill="HTML" rating={5} />
